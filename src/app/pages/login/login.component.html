@@ -1,0 +1,127 @@
+<!-- Banner Section Starts Here -->
+<section class="inner-banner bg_img padding-bottom"
+    style="background: url(assets/images/bg_4.png) no-repeat right bottom;">
+    <div class="container">
+        <div class="inner-banner-wrapper">
+            <div class="inner-banner-content">
+                <h2 class="inner-banner-title">login your
+                    account</h2>
+                <ul class="breadcums">
+                    <li>
+                        <a routerLink="">Home</a>
+                    </li>
+                    <li>
+                        <span>Login</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="inner-banner-thumb about d-none d-md-block">
+                <img src="assets/images/thumb_13.png" alt="account">
+            </div>
+        </div>
+    </div>
+    <div class="shape1 paroller" data-paroller-factor=".2">
+        <img src="assets/images/balls.png" alt="about">
+    </div>
+</section>
+<!-- Banner Section Ends Here -->
+
+
+<!-- Account Section Starts Here -->
+<section class="account-section padding-top padding-bottom">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <div class="col-lg-7  d-none d-lg-block">
+                <div class="account-thumb">
+                    <img src="assets/images/login-thumb.png" alt="account">
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="account-wrapper">
+                    <h2 class="title">Sign In Your Account</h2>
+                    <form class="account-form">
+                        <div class="form--group">
+                            <i class="las la-user"></i>
+                            <input type="email" class="form--control" placeholder="Email or User Name">
+                        </div>
+                        <div class="form--group">
+                            <i class="las la-lock"></i>
+                            <input type="password" class="form--control" placeholder="Password">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="form--group custom--checkbox ">
+                                <input type="checkbox" id="check01">
+                                <label for="check01">Remember me</label>
+                            </div>
+                            <div class="form--group forgot-pass">
+                                <a routerLink="forgot-pwd">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="form--group">
+                            <button class="custom-button">SIGN IN NOW</button>
+                        </div>
+                    </form>
+                    <span class="subtitle">Don't have an account yet?</span>
+                    <a routerLink="signup" class="create-account theme-four">Create Account</a>
+                    <div class="shape">
+                        <img src="assets/images/shape_3.png" alt="account">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Account Section Ends Here -->
+
+
+<!-- Profit Calculation Section Starts Here -->
+<section class="profit-calculation wow slideInUp overflow-hidden">
+    <div class="container">
+        <div class="profit-calculation-wrapper">
+            <h3 class="title">Calculate How Much You Profit</h3>
+            <form class="profit-form">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form--group">
+                            <select>
+                                <option value="plan01">Select the Plan</option>
+                                <option value="plan01">Business Plan</option>
+                                <option value="plan01">Professional Plan</option>
+                                <option value="plan01">Individual Plan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form--group">
+                            <select>
+                                <option value="plan01">Select the Currency</option>
+                                <option value="plan01">Bitcoin</option>
+                                <option value="plan01">Ethereum</option>
+                                <option value="plan01">Ripple</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form--group">
+                            <input type="text" class="form--control" placeholder="Enter the Ammount" required="">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="profit-title-wrapper d-flex justify-content-between my-5 mb-3">
+                <h5 class="daily-profit text--secondary">Daily Profit - <span class="ammount">0.1200</span>BTC</h5>
+                <h5 class="daily-profit theme-four">Total Profit - <span class="ammount">24.1200</span>BTC</h5>
+            </div>
+            <div class="invest-range-area">
+                <div class="main-amount">
+                    <input type="text" class="calculator-invest" id="btc-amount" readonly="">
+                </div>
+                <div class="invest-amount" data-min="01 BTC" data-max="10000 BTC">
+                    <div id="btc-range" class="invest-range-slider"></div>
+                </div>
+                <button type="submit" class="custom-button px-0">Invest now</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Profit Calculation Section Ends Here -->
