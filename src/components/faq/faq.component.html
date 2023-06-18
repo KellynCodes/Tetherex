@@ -7,7 +7,7 @@
                 <h2 class="inner-banner-title mx-650">frequently asked questions</h2>
                 <ul class="breadcums">
                     <li>
-                        <a href="">Home</a>
+                        <a routerLink="">Home</a>
                     </li>
                     <li>
                         <span>Faq</span>
@@ -81,7 +81,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="faq-wrapper">
-                                <div class="faq-item">
+                                <div [class.open]="isMenuOpen" class="faq-item">
                                     <div class="faq-title">
                                         <h5 class="title">Why You Should Become An Investor?</h5>
                                         <div class="arrow">
@@ -113,7 +113,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="faq-item">
+                                <div [class.open]="isMenuOpen" class="faq-item">
                                     <div class="faq-title">
                                         <h5 class="title">Why You Choose Us?</h5>
                                         <div class="arrow">
@@ -133,10 +133,10 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="faq-wrapper">
-                                <div class="faq-item">
+                                <div [ngClass]="{'open': isMenuOpen, 'active': isMenuOpen}" class="faq-item">
                                     <div class="faq-title">
                                         <h5 class="title">Why You Should Become An Investor?</h5>
-                                        <div class="arrow">
+                                        <div (click)="toggleFaq()" class="arrow">
                                             <i class="fas fa-angle-up"></i>
                                         </div>
                                     </div>
@@ -408,30 +408,7 @@
 <!-- Help Section Ends Here -->
 
 
-<!-- Affiliate Commission Section Stats Here -->
-<section class="commission-section bg_img" style="background: url(assets/images/bg.jpg) no-repeat center;">
-    <div class="container">
-        <div class="commission-wrapper">
-            <div class="commission-thumb d-none d-lg-block">
-                <img src="assets/images/thumb_8.png" alt="commission">
-            </div>
-            <div class="commission-content">
-                <h2 class="title">30% <br>
-                    <span>Affiliate Commission</span>
-                </h2>
-                <p>
-                    Phasellus a non dui hymenaeos mi ideu non ut lacus, nec erat consequataceuaugueid augue gravida
-                    consequat Magna erat nuncsit.
-                </p>
-                <a href="affiliate.html" class="cmn--btn">View Details</a>
-                <div class="shape1">
-                    <img src="assets/images/shape1_2.png" alt="commission">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Affiliate Commission Section Ends Here -->
+<trex-affiliate-comp></trex-affiliate-comp>
 
 
 <!-- Testimonial Two Section Starts Here -->

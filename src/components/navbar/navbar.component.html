@@ -1,4 +1,9 @@
 <!-- Header Section Starts Here -->
+<!-- preloader -->
+<div class="loader-bg">
+    <div class="loader-p"></div>
+</div>
+<div [class.overlay-color]="isMenuOpen" class="overlay"></div>
 <header class="header">
     <div class="header-bottom">
         <div class="container">
@@ -8,27 +13,27 @@
                         <h1 class="logo-text">Tetherex</h1>
                     </a>
                 </div>
-                <div class="header-trigger d-block d-lg-none">
+                <div (click)="toggleMenu()" [class.active]="isMenuOpen" class="header-trigger d-block d-lg-none">
                     <span></span>
                 </div>
-                <ul class="menu">
+                <ul [class.active]="isMenuOpen" class="menu">
                     <li>
-                        <a routerLink="home">Home</a>
+                        <a (click)="toggleMenu()" routerLink="home">Home</a>
                     </li>
                     <li>
-                        <a routerLink="about">About</a>
+                        <a (click)="toggleMenu()" routerLink="about">About</a>
                     </li>
                     <li>
                         <a href="#0">Plan</a>
                         <ul class="sub-menu">
                             <li>
-                                <a routerLink="investment-plan">Investment Plan 01</a>
+                                <a routerLink="investment-plan/ivp-one">Investment Plan 01</a>
                             </li>
                             <li>
-                                <a routerLink="investment-plan">Investment Plan 02</a>
+                                <a routerLink="investment-plan/ivp-one">Investment Plan 02</a>
                             </li>
                             <li>
-                                <a routerLink="investment-plan">Investment Plan 03</a>
+                                <a routerLink="investment-plan/ivp-one">Investment Plan 03</a>
                             </li>
                         </ul>
                     </li>
@@ -36,29 +41,29 @@
                         <a href="#0">Account</a>
                         <ul class="sub-menu">
                             <li>
-                                <a routerLink="login">Log In</a>
+                                <a (click)="toggleMenu()" routerLink="login">Log In</a>
                             </li>
                             <li>
-                                <a routerLink="signup">Sign Up</a>
+                                <a (click)="toggleMenu()" routerLink="signup">Sign Up</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a routerLink="blog">Blog</a>
+                        <a (click)="toggleMenu()" routerLink="blog">Blog</a>
                         <ul class="sub-menu">
                             <li>
-                                <a routerLink="blog">Blog</a>
+                                <a (click)="toggleMenu()" routerLink="blog">Blog</a>
                             </li>
                             <li>
-                                <a routerLink="blog-details">Blog Details</a>
+                                <a (click)="toggleMenu()" routerLink="blog-details">Blog Details</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a routerLink="contact">Contact</a>
+                        <a (click)="toggleMenu()" routerLink="contact">Contact</a>
                     </li>
                     <li>
-                        <a routerLink="investment-plan" class="cmn--btn">Invest Now</a>
+                        <a (click)="toggleMenu()" routerLink="investment-plan/ivp-one" class="cmn--btn">Invest Now</a>
                     </li>
                 </ul>
             </div>
