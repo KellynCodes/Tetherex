@@ -10,6 +10,14 @@ import { ContactComponent } from 'src/app/pages/contact/contact.component';
 import { DashboardComponent } from 'src/app/pages/users/dashboard/dashboard.component';
 import { ProfileComponent } from 'src/app/pages/users/profile/profile.component';
 import { FaqComponent } from '../faq/faq.component';
+import { MissionVisionComponent } from '../mission-vision/mission-vision.component';
+import { InvestorsComponent } from '../investors/investors.component';
+import { AffiliateComponent } from '../../app/pages/affiliate/affiliate.component';
+import { TermOfServiceComponent } from 'src/components/term-of-service/term-of-service.component';
+import { IvpThreeComponent } from '../investmentPlan/ivp-three/ivp-three.component';
+import { IvpTwoComponent } from '../investmentPlan/ivp-two/ivp-two.component';
+import { IvpOneComponent } from '../investmentPlan/ivp-one/ivp-one.component';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,11 +31,26 @@ export const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
     ],
   },
+
+  {
+    path: 'investment-plan',
+    children: [
+      { path: 'ivp-one', component: IvpOneComponent },
+      { path: 'ivp-two', component: IvpTwoComponent },
+      { path: 'ivp-three', component: IvpThreeComponent },
+    ],
+  },
+
   { path: 'blog', component: BlogComponent },
-  { path: 'blog-details', component: BlogDetailComponent },
+  { path: 'blog-details/:blog-id', component: BlogDetailComponent },
+  { path: 'investors', component: InvestorsComponent },
+  { path: 'mission-vision', component: MissionVisionComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'login', component: LoginComponent },
   { path: 'faq', component: FaqComponent },
+  { path: 'affiliate', component: AffiliateComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'term-of-service', component: TermOfServiceComponent },
   { path: 'pageNotFound', component: NotfoundComponent },
   { path: '**', redirectTo: 'pageNotFound', pathMatch: 'full' },
 ];

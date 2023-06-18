@@ -15,6 +15,15 @@ import { BlogDetailComponent } from '../components/blog-detail/blog-detail.compo
 import { ContactComponent } from './pages/contact/contact.component';
 import { DashboardComponent } from './pages/users/dashboard/dashboard.component';
 import { FaqComponent } from '../components/faq/faq.component';
+import { InvestorsComponent } from '../components/investors/investors.component';
+import { MissionVisionComponent } from '../components/mission-vision/mission-vision.component';
+import { TermOfServiceComponent } from '../components/term-of-service/term-of-service.component';
+import { PrivacyPolicyComponent } from '../components/privacy-policy/privacy-policy.component';
+import { IvpOneComponent } from 'src/components/investmentPlan/ivp-one/ivp-one.component';
+import { IvpTwoComponent } from 'src/components/investmentPlan/ivp-two/ivp-two.component';
+import { IvpThreeComponent } from '../components/investmentPlan/ivp-three/ivp-three.component';
+import { AffiliateComponent } from './pages/affiliate/affiliate.component';
+import { AffComponent } from '../components/affiliate/affiliate.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +40,15 @@ import { FaqComponent } from '../components/faq/faq.component';
     ContactComponent,
     DashboardComponent,
     FaqComponent,
+    InvestorsComponent,
+    MissionVisionComponent,
+    TermOfServiceComponent,
+    PrivacyPolicyComponent,
+    IvpOneComponent,
+    IvpTwoComponent,
+    IvpThreeComponent,
+    AffiliateComponent,
+    AffComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
